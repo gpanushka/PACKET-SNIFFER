@@ -32,3 +32,54 @@ If the packet is a TCP packet, it extracts the source port (tcp_sport), destinat
 If the packet is a UDP packet, it extracts the source port (udp_sport), destination port (udp_dport), and payload.
 
 TCP and UDP are fundamental protocols of the Internet that serve different purposes based on the requirements of reliability, speed, and efficiency. Understanding the differences between TCP and UDP is crucial for network design, troubleshooting, and application development.
+
+<h4>Main Function:</h4>
+
+![image](https://github.com/gpanushka/PRODIGY_CS_05/assets/167328539/998b420f-1b7b-468d-820c-dd083266f6b8)
+
+
+This function starts the packet sniffer and captures packets indefinitely, using _sniff_ to apply the _packet_handler_ function to each captured packet. _store=0_ means packets are not stored in memory.
+
+<h4>Entry Point:</h4>
+
+![image](https://github.com/gpanushka/PRODIGY_CS_05/assets/167328539/0ebb7daf-4a54-4af4-ad2a-acb053c35477)
+
+This condition allows the script to be run directly or imported without executing the sniffer.
+
+
+<h3>OUTPUT:</h3>
+
+On running the program, we get these IP addresses as the output.
+
+![image](https://github.com/gpanushka/PRODIGY_CS_05/assets/167328539/264e8981-9c17-48e4-8459-36464b59b438)
+
+![image](https://github.com/gpanushka/PRODIGY_CS_05/assets/167328539/ba74522b-77fa-45a5-a48e-68a89be370d8)
+
+
+<h4>Explaination of the output:</h4>
+
+<h5>Example for TCP:</h5>
+
+IP Packet: 172.20.10.6 -> 13.89.179.11 | Protocol: 6
+TCP Packet: 172.20.10.6:64786 -> 13.89.179.11:443
+--------------------
+Source IP: 172.20.10.6
+Destination IP: 13.89.179.11
+Protocol: TCP (protocol number 6)
+Source Port: 64786
+Destination Port: 443 (HTTPS)
+
+<h5>Example for UDC</h5>
+
+UDP Packets
+
+IP Packet: 172.20.10.6 -> 172.20.10.15 | Protocol: 17
+UDP Packet: 172.20.10.6:137 -> 172.20.10.15:137
+Payload: NBNSHeader / NBNSQueryRequest who has '\\ANUSHKA'
+--------------------
+Source IP: 172.20.10.6
+Destination IP: 172.20.10.15
+Protocol: UDP (protocol number 17)
+Source Port: 137 (NetBIOS Name Service)
+Destination Port: 137 (NetBIOS Name Service)
+Payload: Contains an NBNS query (NetBIOS Name Service query)
