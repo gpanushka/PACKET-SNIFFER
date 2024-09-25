@@ -1,4 +1,4 @@
-This is my fifth task as a Cyber Security Intern at Prodigy InfoTech where I was supposed to develop a packet sniffer tool that captures and analyzes network packets and display relevant information such as source and destination IP addresses, protocols, and payload data while ensuring the ethical use of the tool for educational purposes.
+I developed a packet sniffer tool that captures and analyzes network packets and display relevant information such as source and destination IP addresses, protocols, and payload data while ensuring the ethical use of the tool for educational purposes.
 
 A packet sniffer is a software or hardware tool that intercepts and logs traffic passing over a digital network. It captures data packets, which are units of data transmitted between network devices, and allows for inspection of these packets for various purposes, such as debugging, security analysis, network management, and performance monitoring.
 
